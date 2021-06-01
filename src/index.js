@@ -1,6 +1,6 @@
 import initTilt from "./js/tilt";
 import initSr from "./js/sr";
-import resume from "./assets/Veselin-Georgiev.pdf";
+import resume from "./assets/Veselin-G.pdf";
 
 import "./style/main.scss";
 
@@ -18,7 +18,7 @@ $('a[href^="#"]').on("click", function (event) {
 });
 
 function addResume(pdf) {
-  if (!pdf) return;
+  if (!pdf) { return };
 
   const resumeButton = document.querySelector(".cta-btn--resume");
   resumeButton.setAttribute("href", pdf);
